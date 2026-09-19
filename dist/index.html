@@ -1,125 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LifePath Vietnam turns a citizen's life event into verified procedures, unclaimed benefits and trackable public-service actions.">
-  <meta name="theme-color" content="#083c35">
-  <title>LifePath Vietnam | From life event to outcome</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23083c35'/%3E%3Cpath d='M17 17v30h23' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M22 39l9-9 7 7 10-13' fill='none' stroke='%23ffcf5c' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <style>
-    :root{--ink:#102824;--deep:#083c35;--mint:#dff6e9;--green:#1e806c;--yellow:#ffcf5c;--blue:#dcecff;--red:#e35b4f;--paper:#f7f9f5;--white:#fff;--line:#cad7d2;--muted:#5c6d69}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.55;letter-spacing:0}a{color:inherit}button{font:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
-    nav{height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:800 20px/1 "Manrope";display:flex;align-items:center;gap:10px}.mark{width:30px;height:30px;border-radius:7px;background:var(--deep);position:relative}.mark:before{content:"";position:absolute;left:8px;top:7px;width:12px;height:14px;border-left:3px solid white;border-bottom:3px solid white}.mark:after{content:"";position:absolute;left:11px;top:12px;width:11px;height:7px;border-top:3px solid var(--yellow);transform:rotate(-38deg)}.nav-note{font-weight:600;color:var(--muted);font-size:14px}
-    .hero{padding:56px 0 44px;display:grid;grid-template-columns:.82fr 1.18fr;gap:56px;align-items:center}.eyebrow{font-weight:800;text-transform:uppercase;font-size:13px;color:var(--green);margin-bottom:18px}.hero h1{font:800 clamp(42px,6vw,72px)/1.02 "Manrope";letter-spacing:0;margin:0 0 22px}.hero h1 span{color:var(--green)}.lead{font-size:20px;line-height:1.5;max-width:600px;color:#344c47}.thesis{border-left:5px solid var(--yellow);padding-left:18px;margin-top:28px;font-weight:700;font-size:17px}
-    .demo{background:var(--white);border:1px solid var(--line);box-shadow:0 18px 45px rgba(8,60,53,.10);border-radius:8px;overflow:hidden}.demo-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.status{font-size:13px;color:var(--green);font-weight:800}.status:before{content:"";display:inline-block;width:8px;height:8px;background:#35a775;border-radius:50%;margin-right:7px}.tabs{display:flex;gap:6px;padding:12px;background:#eef3f0;overflow:auto}.tab{white-space:nowrap;border:1px solid transparent;background:transparent;border-radius:6px;padding:9px 12px;cursor:pointer;font-weight:700;color:var(--muted)}.tab.active{background:white;border-color:var(--line);color:var(--ink)}.demo-body{padding:22px}.quote{background:var(--deep);color:white;padding:20px;border-radius:7px;font-size:18px;font-weight:600}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.metric{border:1px solid var(--line);border-radius:6px;padding:12px}.metric strong{display:block;font:800 22px "Manrope"}.metric small{color:var(--muted)}.journey{display:grid;gap:9px}.step{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;border-top:1px solid #e4ebe7;padding-top:10px}.step-num{width:27px;height:27px;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-size:13px;font-weight:800}.pill{font-size:12px;font-weight:800;padding:4px 7px;border-radius:4px;background:var(--blue);color:#215480}.pill.action{background:var(--mint);color:#176552}.pill.check{background:#fff1cf;color:#765600}
-    section{padding:74px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px;margin-bottom:34px}.kicker{font-weight:800;color:var(--green);text-transform:uppercase;font-size:13px}.section-head h2{font:800 clamp(30px,4vw,48px)/1.1 "Manrope";margin:0;letter-spacing:0}.section-head p{font-size:18px;color:var(--muted);margin:12px 0 0;max-width:680px}
-    .engines{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.engine{border-top:5px solid var(--deep);background:white;padding:24px;border-radius:0 0 7px 7px;min-height:260px}.engine:nth-child(2){border-color:var(--yellow)}.engine:nth-child(3){border-color:#4e86bc}.engine .n{font:800 13px "Manrope";color:var(--muted)}.engine h3{font:800 23px "Manrope";margin:35px 0 12px}.engine p{color:var(--muted)}.engine strong{display:block;margin-top:18px}
-    .origin{background:var(--deep);color:white}.origin .kicker{color:var(--yellow)}.origin .section-head p{color:#c8d8d4}.models{display:grid;grid-template-columns:1fr 90px 1fr;align-items:stretch}.model{border:1px solid #4b756e;padding:26px;border-radius:7px}.model .country{font-weight:800;color:var(--yellow);font-size:13px;text-transform:uppercase}.model h3{font:800 28px "Manrope";margin:12px 0}.model ul{padding-left:20px;color:#d9e5e2}.plus{display:grid;place-items:center;font:800 38px "Manrope";color:var(--yellow)}.formula{margin-top:22px;background:white;color:var(--ink);padding:20px 24px;border-radius:7px;font:800 20px "Manrope";text-align:center}
-    .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.why{display:grid;grid-template-columns:42px 1fr;gap:14px;background:white;border:1px solid var(--line);padding:20px;border-radius:7px}.why-num{font:800 24px "Manrope";color:var(--green)}.why h3{margin:1px 0 5px;font:800 18px "Manrope"}.why p{margin:0;color:var(--muted)}
-    .compare{overflow:auto;background:white;border:1px solid var(--line);border-radius:7px}table{width:100%;border-collapse:collapse;min-width:680px}th,td{text-align:left;padding:16px;border-bottom:1px solid var(--line)}th{background:#eef3f0;font-size:13px;text-transform:uppercase}td:first-child{font-weight:700}.yes{color:var(--green);font-weight:800}.no{color:var(--muted)}
-    .prototype{display:grid;grid-template-columns:1fr 1fr;gap:34px}.scope{background:white;border:1px solid var(--line);border-radius:7px;padding:24px}.scope h3{font:800 22px "Manrope";margin:0 0 18px}.case{display:flex;gap:13px;padding:13px 0;border-top:1px solid var(--line)}.case:first-of-type{border-top:0}.case b{color:var(--green)}.impact{background:var(--yellow);border-radius:7px;padding:28px;color:#382e12}.impact h3{font:800 26px "Manrope";margin:0 0 10px}.impact blockquote{font:800 22px/1.35 "Manrope";margin:28px 0 0}.sources{font-size:14px;color:var(--muted);margin-top:30px}.sources a{margin-right:18px;text-decoration-thickness:1px;text-underline-offset:3px}
-    footer{padding:35px 0 50px}.foot{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:14px}.foot strong{color:var(--ink)}
-    @media(max-width:850px){.hero,.section-head,.prototype{grid-template-columns:1fr}.hero{gap:34px;padding-top:38px}.engines{grid-template-columns:1fr}.models{grid-template-columns:1fr}.plus{height:70px}.why-grid{grid-template-columns:1fr}.section-head{gap:8px}.nav-note{display:none}}
-    @media(max-width:540px){.wrap{width:min(100% - 24px,1180px)}.hero h1{font-size:42px}.summary{grid-template-columns:1fr}.step{grid-template-columns:30px 1fr}.step .pill{grid-column:2;width:max-content}.demo-body{padding:14px}.foot{display:block}.foot span{display:block;margin-top:8px}}
-  </style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LifePath Vietnam biến sự kiện cuộc đời thành quyền lợi, thủ tục và kế hoạch hành động có thể theo dõi.">
+  <meta name="theme-color" content="#063f38"><title>LifePath Vietnam | Trợ lý hành động dịch vụ công</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23063f38'/%3E%3Cpath d='M16 17v30h24' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M22 39l9-9 7 7 10-13' fill='none' stroke='%23ffcd57' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 <body>
-  <nav class="wrap"><div class="brand"><span class="mark" aria-hidden="true"></span>LifePath Vietnam</div><div class="nav-note">Concept proposal · Data for Life 2026</div></nav>
-
+  <header class="topbar"><button class="brand-button" id="brand-home" aria-label="Về trang bắt đầu"><span class="brand-mark"></span><span>LifePath <b>Vietnam</b></span></button><div class="top-actions"><span class="sandbox-label">PROTOTYPE SANDBOX</span><button class="text-button" id="privacy-button">Quyền riêng tư</button><button class="avatar-button" id="profile-button" aria-label="Hồ sơ công dân">NL</button></div></header>
   <main>
-    <header class="hero wrap">
-      <div>
-        <div class="eyebrow">From life event to real outcome</div>
-        <h1>Public services that <span>find you.</span></h1>
-        <p class="lead">An AI case manager that understands what happened in a citizen's life, discovers relevant procedures and unclaimed benefits, then guides every action until completion.</p>
-        <div class="thesis">Not another government chatbot. A verified, consent-based action engine.</div>
+    <section id="start-view" class="start-view view active">
+      <div class="start-copy"><p class="eyebrow">Trợ lý hành động dịch vụ công</p><h1>Hãy nói điều vừa xảy ra.<br><span>LifePath sẽ tìm đường đi tiếp.</span></h1><p class="start-lead">Mô tả một sự kiện trong cuộc sống. LifePath sẽ xác định thủ tục, phát hiện quyền lợi có thể bị bỏ sót và tạo kế hoạch cá nhân hóa đến khi hoàn thành.</p>
+        <form id="event-form" class="event-composer"><label for="event-input">Điều gì đang xảy ra với bạn?</label><textarea id="event-input" rows="3" placeholder="Ví dụ: Tôi nghỉ việc từ tháng 7, đang mang thai và có một con nhỏ..." required></textarea><div class="composer-footer"><span>Dữ liệu mẫu, không kết nối hệ thống thật</span><button type="submit" class="primary-button">Tạo LifeCase</button></div></form>
+        <div class="example-row"><span>Thử nhanh:</span><button class="example-chip" data-example="Tôi mất việc ba tháng trước, đang mang thai và có một con năm tuổi.">Mất việc</button><button class="example-chip" data-example="Gia đình tôi vừa có em bé và cần hoàn tất các giấy tờ liên quan.">Sinh con</button><button class="example-chip" data-example="Tôi muốn mở một quán ăn nhỏ tại Đà Nẵng.">Mở quán ăn</button></div>
       </div>
-      <div class="demo" aria-label="Interactive LifePath journey demo">
-        <div class="demo-head"><strong>Citizen journey preview</strong><span class="status">Verified sources</span></div>
-        <div class="tabs" role="tablist">
-          <button class="tab active" data-case="job" role="tab">Lost my job</button>
-          <button class="tab" data-case="baby" role="tab">Had a baby</button>
-          <button class="tab" data-case="business" role="tab">Open a restaurant</button>
-        </div>
-        <div class="demo-body" id="case-panel" aria-live="polite"></div>
-      </div>
-    </header>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">How it works</div><div><h2>One conversation. Three coordinated engines.</h2><p>The citizen describes a goal in ordinary language. LifePath turns it into a structured case without requiring them to know procedure names or responsible agencies.</p></div></div>
-        <div class="engines">
-          <article class="engine"><span class="n">01</span><h3>Life Event Engine</h3><p>Understands context, asks only relevant questions and maps every connected procedure across agencies.</p><strong>Output: personalised journey</strong></article>
-          <article class="engine"><span class="n">02</span><h3>Entitlement Engine</h3><p>Matches the citizen's consented profile against eligibility rules to uncover benefits they may not know exist.</p><strong>Output: explainable eligibility</strong></article>
-          <article class="engine"><span class="n">03</span><h3>Action Engine</h3><p>Checks documents, pre-fills forms, sequences dependencies, tracks cases and helps resolve rejected submissions.</p><strong>Output: completed outcomes</strong></article>
-        </div>
-      </div>
+      <aside class="start-proof"><div class="proof-header"><span class="live-dot"></span> Cách LifePath xử lý</div><ol class="proof-flow"><li><span>01</span><div><b>Hiểu sự kiện</b><small>Nhận diện hoàn cảnh và thông tin còn thiếu</small></div></li><li><span>02</span><div><b>Kiểm tra quyền lợi</b><small>Đối chiếu dữ liệu được đồng ý với quy tắc chính thức</small></div></li><li><span>03</span><div><b>Lập hành trình</b><small>Sắp xếp thủ tục, giấy tờ và thời hạn đúng thứ tự</small></div></li><li><span>04</span><div><b>Đồng hành đến kết quả</b><small>Theo dõi tiến độ và hỗ trợ khi hồ sơ bị trả lại</small></div></li></ol><div class="proof-footer"><b>Không chỉ trả lời.</b> LifePath quản lý một hồ sơ hành động có thể hoàn thành.</div></aside>
     </section>
-
-    <section class="origin">
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">Proven foundations</div><div><h2>Global lessons, redesigned for Vietnam.</h2><p>LifePath combines two public-service models already implemented at scale, then adds an execution layer suited to Vietnam's VNeID and digital-government direction.</p></div></div>
-        <div class="models">
-          <article class="model"><div class="country">Singapore</div><h3>LifeSG</h3><ul><li>Services organised around major life events</li><li>100+ government services in one place</li><li>Personalised recommendations and eligibility checks</li><li>Application updates and reminders</li></ul></article>
-          <div class="plus">+</div>
-          <article class="model"><div class="country">China · Shanghai</div><h3>Policy finds people</h3><ul><li>Data matches citizens and businesses to policies</li><li>Benefits discovered proactively</li><li>Application-free or one-confirmation services</li><li>Direct access to eligible support</li></ul></article>
-        </div>
-        <div class="formula">Life-event services + proactive benefit discovery + trackable execution = LifePath Vietnam</div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">Why this problem</div><div><h2>A stronger interpretation of BTL86-40.</h2><p>BTL86-40 identifies the need for a digital public-service assistant. LifePath keeps that official problem statement while moving beyond information retrieval.</p></div></div>
-        <div class="why-grid">
-          <article class="why"><div class="why-num">01</div><div><h3>National-scale relevance</h3><p>Nearly every citizen encounters multi-step procedures and may miss support they are entitled to receive.</p></div></article>
-          <article class="why"><div class="why-num">02</div><div><h3>Aligned with VNeID</h3><p>It uses consented identity and document data as the foundation for simpler, more personalised public services.</p></div></article>
-          <article class="why"><div class="why-num">03</div><div><h3>Demonstrable without privileged data</h3><p>A prototype can use official public rules and simulated citizen records while clearly showing future integration.</p></div></article>
-          <article class="why"><div class="why-num">04</div><div><h3>Value on both sides</h3><p>Citizens complete tasks more easily; agencies receive cleaner applications and insight into recurring service failures.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">Differentiation</div><div><h2>Information is not completion.</h2><p>The competitive advantage is the structured procedure graph, explainable eligibility and closed-loop case management, not the language model alone.</p></div></div>
-        <div class="compare"><table><thead><tr><th>Capability</th><th>FAQ / Search</th><th>Typical AI chatbot</th><th>LifePath</th></tr></thead><tbody>
-          <tr><td>Answers procedure questions</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes, with sources</td></tr>
-          <tr><td>Understands a life event</td><td class="no">No</td><td>Partially</td><td class="yes">Structured case</td></tr>
-          <tr><td>Finds unclaimed benefits</td><td class="no">No</td><td class="no">Usually no</td><td class="yes">Proactively</td></tr>
-          <tr><td>Sequences cross-agency actions</td><td class="no">No</td><td class="no">No workflow</td><td class="yes">Dependency graph</td></tr>
-          <tr><td>Checks application readiness</td><td class="no">No</td><td class="no">Limited</td><td class="yes">Document readiness</td></tr>
-          <tr><td>Tracks until outcome</td><td class="no">No</td><td class="no">No</td><td class="yes">Closed loop</td></tr>
-        </tbody></table></div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">Hackathon scope</div><div><h2>Build three journeys deeply, not thousands superficially.</h2><p>A focused prototype can prove the platform model while remaining credible within the competition timeline.</p></div></div>
-        <div class="prototype">
-          <div class="scope"><h3>End-to-end prototype</h3><div class="case"><b>01</b><span>Having a child: registration, residence, health insurance and family support.</span></div><div class="case"><b>02</b><span>Losing a job: unemployment insurance, healthcare, training and family benefits.</span></div><div class="case"><b>03</b><span>Opening a restaurant: business registration, tax, food safety and local permits.</span></div></div>
-          <div class="impact"><h3>The strategic shift</h3><p>Today, digital government often waits for citizens to locate the correct service. LifePath reverses that relationship while keeping citizens in control of their data and every final decision.</p><blockquote>“Tell us what happened. We will show what to do, what you can claim, and what happens next.”</blockquote></div>
-        </div>
-        <div class="sources"><strong>Reference models:</strong> <a href="https://www.tech.gov.sg/products-and-services/for-citizens/digital-services/lifesg/" target="_blank" rel="noreferrer">LifeSG · GovTech Singapore</a><a href="https://english.shanghai.gov.cn/en-Bulletin/20250728/22ec041b0c504b92b23598a72bfebb68.html" target="_blank" rel="noreferrer">AI + Government Services · Shanghai</a><a href="https://dataforlife.vn/de-bai/40" target="_blank" rel="noreferrer">BTL86-40 · Data for Life</a></div>
-      </div>
-    </section>
+    <section id="intake-view" class="intake-view view"><div class="intake-shell"><div class="intake-progress"><button class="back-button" id="intake-back">Quay lại</button><div class="progress-copy"><span id="intake-step-label">Bước 1/3</span><div class="progress-track"><i id="intake-progress-bar"></i></div></div></div><div id="intake-content"></div></div></section>
+    <section id="app-view" class="app-view view"><aside class="sidebar"><div class="case-identity"><span class="case-label">LIFECASE ĐANG MỞ</span><strong id="case-title">Hỗ trợ sau khi mất việc</strong><small id="case-code">LP-2026-001</small></div><nav class="side-nav"><button data-page="overview" class="active"><span>01</span>Tổng quan</button><button data-page="benefits"><span>02</span>Quyền lợi <b id="benefit-count">0</b></button><button data-page="journey"><span>03</span>Hành trình</button><button data-page="documents"><span>04</span>Giấy tờ</button><button data-page="rescue"><span>05</span>Hồ sơ bị trả lại</button><button data-page="sources"><span>06</span>Nguồn chính thức</button></nav><div class="sidebar-bottom"><button id="new-case-button" class="secondary-button full">Tạo LifeCase mới</button><p>Dữ liệu demo được lưu trên thiết bị này.</p></div></aside><div class="app-main"><div class="app-heading"><div><p class="eyebrow" id="page-eyebrow">Hành trình của bạn</p><h2 id="page-title">Tổng quan LifeCase</h2></div><div class="trust-chip"><span></span> Có nguồn kiểm chứng</div></div><div id="page-content"></div></div></section>
   </main>
-
-  <footer><div class="wrap foot"><strong>LifePath Vietnam</strong><span>Concept for team evaluation · Data for Life 2026</span></div></footer>
-
-  <script>
-    const cases={
-      job:{quote:'“I lost my job, I am pregnant, and I have a five-year-old child.”',metrics:[['6','relevant services'],['4','potential benefits'],['30 days','action plan']],steps:[['Unemployment benefit application','Action'],['Health insurance continuity check','Eligibility'],['Maternity benefit assessment','Eligibility'],['Employment service registration','Action']]},
-      baby:{quote:'“We have just had a baby and need to complete every required registration.”',metrics:[['5','connected procedures'],['3','agencies coordinated'],['1 journey','for the family']],steps:[['Birth registration','Action'],['Residence registration','Action'],['Health insurance enrolment','Eligibility'],['Family support check','Eligibility']]},
-      business:{quote:'“I want to open a small restaurant in Da Nang.”',metrics:[['7','required actions'],['4','responsible authorities'],['86%','document readiness']],steps:[['Household business registration','Action'],['Tax and e-invoice setup','Check'],['Food safety requirements','Check'],['Local permit verification','Action']]}
-    };
-    function render(key){const d=cases[key];document.querySelector('#case-panel').innerHTML=`<div class="quote">${d.quote}</div><div class="summary">${d.metrics.map(m=>`<div class="metric"><strong>${m[0]}</strong><small>${m[1]}</small></div>`).join('')}</div><div class="journey">${d.steps.map((s,i)=>`<div class="step"><span class="step-num">${i+1}</span><span>${s[0]}</span><span class="pill ${s[1].toLowerCase()}">${s[1]}</span></div>`).join('')}</div>`}
-    document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');render(btn.dataset.case)}));render('job');
-  </script>
-</body>
-</html>
+  <dialog id="privacy-dialog"><div class="dialog-head"><h3>Quyền riêng tư và dữ liệu</h3><button class="close-button" data-close="privacy-dialog" aria-label="Đóng">×</button></div><p>Đây là prototype. Dữ liệu bạn nhập chỉ được lưu trong trình duyệt trên thiết bị này và không được gửi tới VNeID, cơ quan nhà nước hoặc tổ chức tài chính.</p><ul><li>Mỗi nguồn dữ liệu phải được người dùng đồng ý riêng.</li><li>LifePath hiển thị dữ liệu được sử dụng cho từng kết quả.</li><li>Người dùng có thể xóa toàn bộ hồ sơ demo bất kỳ lúc nào.</li></ul><button id="clear-data-button" class="danger-button">Xóa dữ liệu demo</button></dialog>
+  <dialog id="detail-dialog"><div class="dialog-head"><h3 id="detail-title">Chi tiết</h3><button class="close-button" data-close="detail-dialog" aria-label="Đóng">×</button></div><div id="detail-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body></html>
