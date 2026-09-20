@@ -69,6 +69,38 @@
   font-size: 13px;
 }
 
+.detailed-architecture {
+  margin-top: 18px;
+  padding: 0 18px 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.detailed-architecture summary {
+  padding: 16px 0;
+  color: var(--deep);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.detailed-architecture p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.detailed-architecture a,
+.detailed-architecture img {
+  display: block;
+  width: 100%;
+}
+
+.detailed-architecture img {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
 @media (max-width: 820px) {
   .experience-grid,
   .architecture-notes { grid-template-columns: 1fr; }
