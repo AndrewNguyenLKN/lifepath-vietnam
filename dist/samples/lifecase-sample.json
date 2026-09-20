@@ -1,0 +1,29 @@
+{
+  "lifeCaseId": "LP-2026-DEMO-001",
+  "lifeEvent": {"type": "employment_loss", "reportedAt": "2026-09-20"},
+  "citizenContext": {
+    "location": "Da Nang",
+    "dependants": 1,
+    "insuranceMonthsInReferencePeriod": 18,
+    "dataMode": "simulated"
+  },
+  "consent": [
+    {"source": "identity", "purpose": "residency_check", "granted": true},
+    {"source": "social_insurance", "purpose": "benefit_screening", "granted": true},
+    {"source": "financial_context", "purpose": "means_tested_support_discovery", "granted": false}
+  ],
+  "entitlements": [
+    {
+      "id": "unemployment-benefit",
+      "assessment": "potentially_eligible",
+      "decisionOwner": "competent_authority",
+      "matchedRuleVersion": "VN-UI-ELIGIBILITY-DEMO-001@2026.09-demo"
+    }
+  ],
+  "actions": [
+    {"id": "verify-termination-document", "status": "to_do", "dependsOn": []},
+    {"id": "prepare-application", "status": "blocked", "dependsOn": ["verify-termination-document"]},
+    {"id": "submit-officially", "status": "blocked", "executionChannel": "public_service_portal"}
+  ],
+  "audit": {"explanationAvailable": true, "sourceTraceAvailable": true}
+}

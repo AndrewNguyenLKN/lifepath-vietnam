@@ -1,0 +1,31 @@
+{
+  "ruleId": "VN-UI-ELIGIBILITY-DEMO-001",
+  "title": "Đánh giá sơ bộ trợ cấp thất nghiệp",
+  "status": "prototype_rule",
+  "legalDecision": false,
+  "version": "2026.09-demo",
+  "inputs": [
+    "terminationDate",
+    "insuranceMonthsInReferencePeriod",
+    "lawfulTermination",
+    "newMandatoryInsuranceJob",
+    "consent.insurance"
+  ],
+  "conditions": [
+    {"field": "lawfulTermination", "operator": "equals", "value": true},
+    {"field": "insuranceMonthsInReferencePeriod", "operator": "gte", "value": 12},
+    {"field": "newMandatoryInsuranceJob", "operator": "equals", "value": false},
+    {"field": "consent.insurance", "operator": "equals", "value": true}
+  ],
+  "outputs": {
+    "pass": "potentially_eligible",
+    "missing": "needs_verification",
+    "fail": "condition_not_met"
+  },
+  "explainability": {
+    "showMatchedConditions": true,
+    "showMissingInputs": true,
+    "showSourceAndEffectiveDate": true
+  },
+  "disclaimer": "Kết quả chỉ là đánh giá sơ bộ. Cơ quan có thẩm quyền quyết định cuối cùng."
+}
